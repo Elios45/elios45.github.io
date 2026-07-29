@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.ico" />
+    <title>Elios | Malware Analyst</title>
+    <script>
+      (function () {
+        var redirect = new URLSearchParams(window.location.search).get('p');
+        if (redirect) {
+          window.history.replaceState(null, '', redirect);
+        }
+      })();
+    </script>
+  </head>
+  <body class="antialiased">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
